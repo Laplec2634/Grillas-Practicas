@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de la edad media</title>
+    <style>
+
+        .galeria-flexbox{
+            display: flex;/*Flexbox*/
+            justify-content: space-around;/*Espacio entre imagnes*/
+            flex-wrap: wrap;/*Que las imagnes se envuelvan*/
+            gap: 10px;/*Espacio entre imagenes*/
+            padding: 10px;/*Espacio alrededor*/
+            border: 2px solid black;/*Borde*/
+        }
+
+        .galeria-flexbox img{
+            width: calc(33.33% - 20px);/*Tamaño de  las imagenes*/
+            max-width: 150px;/*Tamaño maximo de las imagenes*/
+            border: 2px solid #754f4f;/*Borde*/
+            padding: 3px;/*Espacio alrededor*/
+            border-radius: 5px;/*Bordes redondos*/
+        }
+
+        .galeria-grid{
+            display: grid;/*Grid*/
+            grid-template-columns: repeat(3, 1fr);/*Columnas*/
+            gap: 10px;/*Espacio entre imagenes*/
+            padding: 10px;/*Espacio alrededor*/
+            border: 2px solid black;/*Borde*/
+        }
+
+        .galeria-grid img{
+            width: 100%;/*Tamaño de  las imagenes*/
+            max-width: 150px;/*Tamaño maximo de las imagenes*/
+            border: 2px solid black;/*Borde*/
+            padding: 5px;/*Espacio alrededor*/
+            border-radius: 8px;/*Bordes redondos*/
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Galeria de la cartas</h1>
+
+    <h2>Caballeros</h2>
+    <div class="galeria-flexbox">
+        <img src="Imagen/images.jpg" alt="caballero1">
+        <img src="Imagen/images.jpg" alt="caballero2">
+        <img src="Imagen/images.jpg" alt="caballero3">
+        <img src="Imagen/images.jpg" alt="caballero4">
+        <img src="Imagen/images.jpg" alt="caballero5">
+        <img src="Imagen/images.jpg" alt="caballero6">
+    </div>
+
+    <h2>caballeria</h2>
+    <div class="galeria-grid">
+        <img src="Imagen/Caballeria (1).jpg" alt="caballeria1">
+        <img src="Imagen/Caballeria (1).jpg" alt="caballeria2">
+        <img src="Imagen/Caballeria (1).jpg" alt="caballeria3">
+        <img src="Imagen/Caballeria (1).jpg" alt="caballeria4">
+        <img src="Imagen/Caballeria (1).jpg" alt="caballeria5">
+        <img src="Imagen/Caballeria (1).jpg" alt="caballeria6">
+    </div>
+    
+</body>
+</html>
